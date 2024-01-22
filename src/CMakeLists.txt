@@ -38,5 +38,6 @@ set (target_include_dirs_private
 #
 
 add_library(${target_name} INTERFACE ${target_source_files})
+add_library (DMRC::FMA ALIAS ${target_name})
 target_include_directories(${target_name} INTERFACE ${CMAKE_CURRENT_LIST_DIR})
 
